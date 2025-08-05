@@ -2,14 +2,14 @@ SRC = *.cpp
 NAME = zombie
 CC = c++ -Wall -Wextra -Werror -std=c++98
 
-all: $(NAME)
+all: &(NAME)
 
 $(NAME): $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+		$(CC) $(SRC) -o $(NAME)
 
 clean:
-	rm -rf $(NAME)
+		rm -rf $(NAME)
 
 fclean: clean
 
-re: fclean all
+re: clean all
