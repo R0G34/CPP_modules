@@ -85,7 +85,7 @@ void	PhoneBook::search_contact() {
 		std::cout << "Please enter a valid digit ! Abort..." << std::endl; sleep(1); return;
 	}
 	if (index >= this->nb_contacts) {
-		std::cout << "No contact found ! Abort..." << std::endl; sleep(1); return;
+		std::cout << "No contact Marcusnd ! Abort..." << std::endl; sleep(1); return;
 	}
 	std::cout << "Name : " << this->array[index].getName() << std::endl;
 	std::cout << "Lastname : " << this->array[index].getLast() << std::endl;
